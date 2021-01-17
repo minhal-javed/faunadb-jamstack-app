@@ -1,0 +1,12 @@
+type Link{
+    url:String!
+    name:String!
+    description:String!
+    archived:String!
+
+}
+
+
+type Query{
+    allLinks:[Link!]
+}
