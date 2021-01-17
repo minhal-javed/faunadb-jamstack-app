@@ -6,8 +6,8 @@ export const LinkCard=({link,refreshLinks})=>{
         try{
             await fetch('/.netlify/functions/updateLink',{
                 method:'PUT',
-                body:JSON.stringify(link)
-            })
+                body:JSON.stringify(link),
+            });
             refreshLinks()
         }catch(err){
             console.log('Error=>',err)
